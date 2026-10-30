@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHIKKU OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="background-grid"></div>
+
+  <main class="dashboard">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">C</div>
+        <div>
+          <h2>CHIKKU<span> OS</span></h2>
+          <small>PERSONAL INTELLIGENCE SYSTEM</small>
+        </div>
+      </div>
+
+      <div class="top-center">
+        <span class="live-dot"></span>
+        ALL SYSTEMS OPERATIONAL
+      </div>
+
+      <div class="top-actions">
+        <span class="system-icon">◈</span>
+        <div class="profile-icon">C</div>
+      </div>
+    </header>
+
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL SPACE</p>
+        <h1 id="greeting">Welcome back.</h1>
+        <p class="subtitle">Your world, organized. Your day, simplified. Chikku is ready.</p>
+      </div>
+
+      <div class="clock">
+        <div id="time">00:00</div>
+        <div id="date">Loading date...</div>
+      </div>
+    </section>
+
+    <section class="grid">
+
+      <article class="panel assistant">
+        <div class="panel-heading">
+          <span class="heading-icon">✦</span>
+          CHIKKU INTELLIGENCE
+          <span class="tag"><span class="live-dot"></span> ONLINE</span>
+        </div>
+
+        <div class="assistant-content">
+          <div class="orb-container">
+            <div class="orb-ring ring-one"></div>
+            <div class="orb-ring ring-two"></div>
+            <div class="orb">
+              <div class="orb-core"></div>
+            </div>
+            <span class="orb-spark spark-one"></span>
+            <span class="orb-spark spark-two"></span>
+          </div>
+
+          <p class="assistant-label">YOUR PERSONAL AI</p>
+          <h2>Hello, I'm Chikku.</h2>
+          <p id="assistant-message">Your personal briefing is ready. Let's get started.</p>
+
+          <button class="primary-button" id="speakBtn">
+            ▶ PLAY DAILY BRIEFING
+          </button>
+        </div>
+
+        <div class="assistant-footer">
+          <span>✦ PERSONAL ASSISTANT</span>
+          <span>VERSION 1.0</span>
+        </div>
+      </article>
+
+     
+<article class="panel weather">
+  <div class="panel-heading">
+    <span class="heading-icon">☼</span>
+    WEATHER
+    <span class="tag" id="weatherStatus">CONNECTING</span>
+  </div>
+
+  <div class="weather-main">
+    <div class="weather-symbol" id="weatherIcon">🌤️</div>
+    <div>
+      <div class="weather-temp" id="weatherTemp">--°C</div>
+      <div class="weather-condition" id="weatherCondition">
+        Fetching conditions...
+      </div>
+    </div>
+  </div>
+
+  <div class="weather-location">LUDHIANA, INDIA</div>
+
+  <div class="weather-bottom">
+    <span>Humidity <b id="weatherHumidity">--%</b></span>
+    <span>Wind <b id="weatherWind">-- km/h</b></span>
+  </div>
+
+  <p class="note" id="weatherUpdated">Connecting to weather service...</p>
+</article>
+
+<!-- 7 DAY WEATHER FORECAST -->
+<article class="panel forecast-panel">
+  <div class="panel-heading">
+    <span class="heading-icon">☁</span>
+    7-DAY FORECAST
+    <span class="tag">LUDHIANA</span>
+  </div>
+
+  <div class="forecast-list" id="forecastList">
+    <p class="note">Loading 7-day forecast...</p>
+  </div>
+</article>
+
+
+
+      <article class="panel">
+        <div class="panel-heading">
+          <span class="heading-icon">✉</span>
+          EMAIL OVERVIEW
+          <span class="tag">DEMO</span>
+        </div>
+
+        <div class="metric">03 <span>recent updates</span></div>
+
+        <div class="item">
+          <span class="dot blue"></span>
+          Project update <small>10:30 AM</small>
+        </div>
+        <div class="item">
+          <span class="dot purple"></span>
+          College notice <small>11:45 AM</small>
+        </div>
+        <div class="item">
+          <span class="dot green"></span>
+          Weekly summary <small>Yesterday</small>
+        </div>
+
+        <p class="note">Gmail integration coming soon</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <span class="heading-icon">✓</span>
+          TODAY'S PRIORITIES
+          <span class="tag">02 TASKS</span>
+        </div>
+
+        <div class="metric">02 <span>things to focus on</span></div>
+
+        <label class="task">
+          <input type="checkbox">
+          <span class="task-number">01</span>
+          <span class="task-name">Complete project work</span>
+        </label>
+
+        <label class="task">
+          <input type="checkbox">
+          <span class="task-number">02</span>
+          <span class="task-name">Revise study notes</span>
+        </label>
+
+        <div class="task-progress">
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+          <small>YOUR DAILY PROGRESS</small>
+        </div>
+      </article>
+
+      
+<article class="panel schedule">
+  <div class="panel-heading">
+    <span class="heading-icon">◷</span>
+    UPCOMING SCHEDULE
+    <span class="tag" id="calendarStatus">CONNECTING</span>
+  </div>
+
+  <div id="scheduleEvents">
+    <p class="note">Connecting to Google Calendar...</p>
+  </div>
+
+  <p class="note" id="calendarUpdated">
+    Your calendar will appear here.
+  </p>
+</article>
+
+
+      
+<article class="panel quick-access">
+  <div class="panel-heading">
+    <span class="heading-icon">▦</span>
+    QUICK ACCESS
+    <span class="tag">LAUNCHPAD</span>
+  </div>
+
+  <div class="app-grid">
+
+    <button class="app-item" data-app="mail">
+      <div class="app-icon app-blue">✉</div>
+      Mail
+    </button>
+
+    <button class="app-item" data-app="calendar">
+      <div class="app-icon app-purple">▣</div>
+      Calendar
+    </button>
+
+    <button class="app-item" data-app="notes">
+      <div class="app-icon app-green">⌘</div>
+      Notes
+    </button>
+
+    <button class="app-item" data-app="files">
+      <div class="app-icon app-orange">▤</div>
+      Files
+    </button>
+
+  </div>
+
+  <p class="note" id="launchStatus">Select an application to launch</p>
+</article>
+
+
+    </section>
+
+    <footer>
+      <span>CHIKKU OS · VERSION 1.0</span>
+      <span class="footer-center">BUILT FOR YOUR WORLD</span>
+      <button class="fullscreen-button" id="fullscreenBtn">
+        ⛶ FULLSCREEN
+      </button>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
